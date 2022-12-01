@@ -12,7 +12,8 @@ var Stepper = function(pins, opts) {
   this._pins.step.mode('output');
   this._pins.enable.mode('output');
   this._pins.direction.mode('output');
-
+  
+  this._intervalId = null;
   this.hold();
 
   this._intervalId = null;
